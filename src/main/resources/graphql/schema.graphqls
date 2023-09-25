@@ -20,7 +20,7 @@ type Event {
     cfpEndDate: Date!
     location: String
     website: Url
-    sessions: [Session]!
+    sessions(first: Int,last: Int,before: String,after: String): SessionConnection
 }
 
 type Session {
