@@ -1,9 +1,9 @@
 services:
   postgres:
-    image: 'postgres:latest'
+    image: 'postgres:15.2-alpine'
     environment:
       - 'POSTGRES_DB=session_demo'
       - 'POSTGRES_PASSWORD=password'
       - 'POSTGRES_USER=devcamilo'
     ports:
-      - '5432'
+      - '5435:5432'

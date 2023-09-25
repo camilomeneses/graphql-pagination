@@ -5,3 +5,15 @@ spring:
     hibernate:
       ddl-auto: 'create-drop'
     show-sql: true
+
+  # GraphQL
+  graphql:
+    graphiql:
+      enabled: true
+    schema:
+      inspection:
+        enabled: true
+
+  docker:
+    compose:
+      lifecycle-management: 'start_and_stop'
